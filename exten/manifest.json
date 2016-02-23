@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Sporkia",
+  "version": "0.1",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "http://sporkia.com/*", "https://secure.sporkia.com/*"
+      ],
+      "js": ["js/jquery-1.11.3.min.js", "js/content.js"]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "images/favicon.png",
+    "default_popup": "html/popup.html",
+    "default_title": "Click here!"
+  }
+}
